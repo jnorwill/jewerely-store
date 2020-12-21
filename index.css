@@ -2,13 +2,34 @@ body {
     margin: 0;
 }
 
+.title {
+    margin: 0;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+.suptitle {
+    margin: 0;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    color: #333333;
+}
+
 .header {
     background: url(./img/header-backround.jpg) 50% 50%;
 }
 
 .main-menu {
     display: flex;
-    max-width: 1100px;
+    max-width: 1110px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -24,45 +45,66 @@ body {
     line-height: 150%;
     color: #ffffff;
     text-decoration: none;
-margin-right: 40px;
+    margin-right: 40px;
 }
-.main-menu-container-items{
-display: flex;
-align-items: center;
+
+.main-menu-container-items {
+    display: flex;
+    align-items: center;
 }
+
 .logo-ojjo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    
 }
 
 .search {
     background: url(./img/search.svg) no-repeat;
     border: none;
+    padding: 0;
+    padding-left: 34px;
+    margin-right: 40px;
+    width: 41px;
+    height: 21px;
+}
+
+.search::placeholder {
     font-family: Gilroy;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 150%;
-color: #FFFFFF;
-text-align: right;
-padding: 0;
-padding-left: 34px;
-padding-right: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.search:focus {
+    outline: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 100px;
+    background: #585656 url(./img/search.svg) no-repeat;
 }
 
 .registration {
     background: none;
     border: none;
     font-family: Gilroy;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 150%;
-color: #FFFFFF;
-padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 0;
+}
 
+.registration:focus {
+    outline: none;
+    cursor: pointer;
 }
 
 .ikon-person {
@@ -74,6 +116,11 @@ padding: 0;
     margin: 0 30px 0 44px;
 }
 
+.ikon-person:focus {
+    outline: none;
+    cursor: pointer;
+}
+
 .ikon-like {
     background: url(./img/ikon-like.svg ) no-repeat;
     border: none;
@@ -81,52 +128,399 @@ padding: 0;
     width: 17px;
     height: 17px;
 }
-.catalog{
+
+.ikon-like:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.catalog {
     margin-top: 523px;
-text-align: center;
+    text-align: center;
 }
-.tagline{
+
+.tagline {
     font-family: Noto Serif;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 49px;
-color: #FFFFFF;
-margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin: 0;
 }
-.catalog-button{
+
+.catalog-button {
     background: #333333;
     border: 1px solid #ffffff;
     font-family: Gilroy;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #FFFFFF;
-height: 51px;
-width: 261px;
-padding: 0;
-margin-top: 50px;
-margin-bottom: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 51px;
+    width: 261px;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
-.brands{
+
+.catalog-button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.brands {
     border-top: 1px solid #ffffff;
 }
-.brands ul{
+
+.brands ul {
     display: flex;
     list-style-type: none;
-    max-width: 1100px;
+    max-width: 1110px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 30px 0;
 }
-.brands-separator{
+
+.brands-separator {
     border-left: 1px solid #ffffff;
 }
-.brands-logo{
+
+.brands-logo {
     width: 100%;
     height: 100%;
+}
+
+.main {
+    background-color: #F9F9F9;
+}
+
+.assortment-of-goods {
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 120px;
+}
+
+.assortment-enumeration {
+    display: flex;
+    margin-top: 60px;
+}
+
+.assortment-enumeration-container-item {
+    position: relative;
+}
+
+.assortment-enumeration__item {
+    position: relative;
+    z-index: 1;
+    margin-right: 24px;
+    background: #F9F9F9;
+    border: 1px solid #D6D6D6;
+    height: 55px;
+    width: 164px;
+    padding: 0;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 31px;
+}
+
+.assortment-enumeration-container-item:last-child .assortment-enumeration__item {
+    margin-right: 6px;
+}
+
+.assortment-enumeration__item:focus {
+    outline: none;
+    cursor: pointer;
+    background: #333333;
+    color: #FFFFFF;
+    height: 61px;
+    width: 170px;
+    border: none;
+    margin-right: 18px;
+    margin-bottom: 25px;
+}
+
+.assortment-enumeration__item-underground {
+    z-index: 0;
+    position: absolute;
+    background: #F9F9F9;
+    border: 1px solid #D6D6D6;
+    height: 55px;
+    width: 165px;
+    box-sizing: border-box;
+    left: 6px;
+    top: 6px;
+}
+
+.assortment-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.assortment-gallery__img {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 280px;
+    width: 350px;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.rings {
+    background: url(./img/assortment-img\(0\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.earrings {
+    background: url(./img/assortment-img\(1\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.pendants {
+    background: url(./img/assortment-img\(2\).jpg) no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.cufflinks {
+    background: url(./img/assortment-img\(3\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.bracelets {
+    background: url(./img/assortment-img\(4\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.clock {
+    background: url(./img/assortment-img\(5\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.salons {
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+    background: url(./img/salons-background.svg);
+}
+
+.suptitle_white {
+    color: #FFFFFF;
+}
+
+.title_white {
+    color: #FFFFFF;
+}
+
+.salons__paragraph {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    max-width: 730px;
+    margin: 45px auto 0;
+}
+
+.salons__button {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    width: 224px;
+    height: 51px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.articles {
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.articles__gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.articles__gallery-link {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 94px 30px;
+    width: 350px;
+    height: 370px;
+    box-sizing: border-box;
+}
+
+.first-advice {
+    background: url(./img/first-abvice.png) no-repeat;
+    background-size: cover;
+}
+
+.second-advice {
+    background: url(./img/second-abvice.jpg) no-repeat;
+    background-size: cover;
+}
+
+.third-advice {
+    background: url(./img/third-abvice.jpg) no-repeat;
+    background-size: cover;
+}
+
+.abvice__button {
+    padding: 0;
+    width: 255px;
+    height: 51px;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #333333;
+    border: 1px solid #FFFFFF;
+    
+}
+.social-networks{
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 150px;
+}
+.social-networks__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.social-networks__gallery-img{
+    height: 300px;
+}
+.social-networks__gallery-link{
+    height: 300px;
+
+}
+.mailing{
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 120px;
+    background: url(./img/salons-background.svg);
+}
+.subscribe{
+display: flex;
+max-width: 780px;
+margin: 63px auto 0;
+justify-content: space-between;
+align-items: center;
+}
+.subscribe__list{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+    height: 105px;
+    margin: 0;
+}
+.subscribe__list li{
+    margin-bottom: 15px;
+}
+.subscribe-form{
+width: 418px;
+height: 85px;
+box-sizing: border-box;
+background: #FFFFFF;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 22px;
+position: relative;
+}
+.subscribe-form::before{
+    z-index: 1;
+    content: "";
+    height: 113px;
+    width: 448px;
+    display: block;
+    border: 1px solid #ffffff;
+    background: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    left: -15px;
+}
+.subscribe-form__email{
+    box-sizing: border-box;
+    height: 45px;
+    width: 200px;
+    border: 1px solid #D6D6D6;
+    z-index: 2;
+    padding: 0;
+    padding-left: 19px;
+}
+.subscribe-form__send{
+    box-sizing: border-box;
+    height: 45px;
+    width: 159px;
+    background: #333333;
+    z-index: 2;
+    padding: 0;
+    border: none;
+    font-family: Gilroy;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
 }
