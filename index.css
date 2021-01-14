@@ -427,40 +427,45 @@ body {
     color: #FFFFFF;
     background: #333333;
     border: 1px solid #FFFFFF;
-    
 }
-.social-networks{
+
+.social-networks {
     max-width: 1110px;
     margin: 0 auto;
     text-align: center;
     padding: 20px 0 150px;
 }
-.social-networks__gallery{
+
+.social-networks__gallery {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
 }
-.social-networks__gallery-img{
-    height: 300px;
-}
-.social-networks__gallery-link{
-    height: 300px;
 
+.social-networks__gallery-img {
+    height: 300px;
 }
-.mailing{
+
+.social-networks__gallery-link {
+    height: 300px;
+}
+
+.mailing {
     margin: 0 auto;
     text-align: center;
     padding: 100px 0 120px;
     background: url(./img/salons-background.svg);
 }
-.subscribe{
-display: flex;
-max-width: 780px;
-margin: 63px auto 0;
-justify-content: space-between;
-align-items: center;
+
+.subscribe {
+    display: flex;
+    max-width: 780px;
+    margin: 63px auto 0;
+    justify-content: space-between;
+    align-items: center;
 }
-.subscribe__list{
+
+.subscribe__list {
     font-family: Gilroy;
     font-style: normal;
     font-weight: normal;
@@ -470,22 +475,31 @@ align-items: center;
     text-align: left;
     height: 105px;
     margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
 }
-.subscribe__list li{
+
+.subscribe__list li {
     margin-bottom: 15px;
+    background: url(./img/ikon-list.svg) no-repeat;
+background-position: left;
+padding-left: 37px;
 }
-.subscribe-form{
-width: 418px;
-height: 85px;
-box-sizing: border-box;
-background: #FFFFFF;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 22px;
-position: relative;
+
+.subscribe-form {
+    width: 418px;
+    height: 85px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    position: relative;
 }
-.subscribe-form::before{
+
+.subscribe-form::before {
     z-index: 1;
     content: "";
     height: 113px;
@@ -497,7 +511,8 @@ position: relative;
     position: absolute;
     left: -15px;
 }
-.subscribe-form__email{
+
+.subscribe-form__email {
     box-sizing: border-box;
     height: 45px;
     width: 200px;
@@ -506,7 +521,8 @@ position: relative;
     padding: 0;
     padding-left: 19px;
 }
-.subscribe-form__send{
+
+.subscribe-form__send {
     box-sizing: border-box;
     height: 45px;
     width: 159px;
@@ -515,12 +531,105 @@ position: relative;
     padding: 0;
     border: none;
     font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer {
+    background: #F9F9F9;
+    padding-top: 80px ;
+    
+}
+
+.footer-main {
+    max-width: 1110px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-item {
+    width: 255px;
+}
+
+.footer-title {
+    margin: 0 0 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333333;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.footer__paragrahp{
+    font-family: Gilroy;
 font-style: normal;
-font-weight: 500;
+font-weight: normal;
 font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #FFFFFF;
+line-height: 150%;
+color: #333333;
+}
+.useful-links__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 ;
+
+}
+.useful-links__list li{
+margin-top: 15px;
+}
+.useful-links__link{
+text-decoration: none;
+    color: #333333;
+
+}
+
+.contacts__list{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.contacts__list li{
+margin-top: 15px;
+}
+.contacts__link{
+    color: #333333;
+padding-left: 37px;
+text-decoration: none;
+background: url(./img/ikon-phone.svg) no-repeat left;
+
+}
+.networks__ikons{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.subfooter{
+    max-width: 1110px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.subtitle__link{
+    font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #333333;
+text-decoration: none;
 }
